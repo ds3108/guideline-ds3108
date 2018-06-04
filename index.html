@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from testingdev/guideline/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jun 2016 16:40:28 GMT -->
+<head>
+	<title>Guideline</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/scripts/shCore.js"></script>
+	<script type="text/javascript" src="js/scripts/shBrushJScript.js"></script>
+	<link type="text/css" rel="stylesheet" href="js/styles/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+
+<body>
+	<header class="guide-head">
+		<div class="row">
+			<img src="img/homer.png" alt="Logotipo de La empresa en cuestión"/>
+			<nav class="main-nav-guid">
+				<ul>
+					<li><a href="index.html">Layout</a></li>
+					<li><a href="elementos-interfaz.html">Elementos de Interfaz</a></li>
+					<li><a href="componentes.html">Componentes</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+
+	<section class="row componente">
+		<h2>Grilla</h2>
+		<p>12 columnas ancho máximo 1000px configurables, cada grupo de columnas debe estar contenido en un padre con clase row, la ultima columna tiene que ser acompañada por la clase last para quitar margen derecho y por ultimo si queremos que la columna en dispositivos mobiles tenga un ancho de 100% de de asignar la clase down</p>
+
+		<div class="alert alerta-adv">
+			<h3>¡Importante!</h3>
+			<p>No utilizar clases de la grilla para dar estilos personalizados, las clases col deben ser utilizadas solo con el fin de estructurar el layout</p>
+		</div>
+	</section>
+
+	<section class="grid-example">
+		<div class="row colored-grid">
+			<div class="col-1 down">
+				col-1
+			</div>
+			<div class="col-11 down last">
+				col-11
+			</div>
+		</div>
+		<div class="row colored-grid">
+			<div class="col-2 down">
+				col-2
+			</div>
+			<div class="col-10 down last">
+				col-10
+			</div>
+		</div>
+		<div class="row colored-grid">
+			<div class="col-3 down">
+				col-3
+			</div>
+			<div class="col-9 down last">
+				col-9
+			</div>
+		</div>
+		<div class="row colored-grid">
+			<div class="col-4">
+				col-4
+			</div>
+			<div class="col-8 last">
+				col-8
+			</div>
+		</div>
+		<div class="row colored-grid">
+			<div class="col-5">
+				col-5
+			</div>
+			<div class="col-7 last">
+				col-7
+			</div>
+		</div>
+		<div class="row colored-grid">
+			<div class="col-6">
+				col-6
+			</div>
+			<div class="col-6 last">
+				col-6
+			</div>
+		</div>
+	</section>
+
+	<section class="componente row menu-paragua">
+		<h2>Header transversal</h2>
+		<nav>
+			<div class="row menu-transversal">
+			<ul>
+				<li><a href="#">NombreEmpresa</a></li>
+				<li><a href="#">Mercado Publico</a></li>
+				<li><a href="#">ChileProveedores</a></li>
+				<li>
+					<select>
+						<option>Sitios Relacionados</option>
+						<option>Sitios Relacionados</option>
+						<option>Sitios Relacionados</option>
+						<option>Sitios Relacionados</option>
+						<option>Sitios Relacionados</option>
+						<option>Sitios Relacionados</option>
+					</select>
+				</li>
+				<li><a href="#">Capacitación</a></li>
+				<li><a href="#">Servicio al usuario</a></li>
+				<li>
+					<ul class="utilidades-accesibilidad">
+						<li><a id="idAument" class="aumentar-texto" title="Aumentar Tamaño Texto">Aumentar Tamaño Texto</a></li>
+						<li><a id="idDismin" class="disminuir-texto" title="Dismninuir Tamaño Texto">Disminuir Tamaño Texto</a></li>
+						<li><a id="idAltoCont" class="alto-cont" title="Versión Alto Contraste">Versión Alto Contraste</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</nav>
+	</section>
+
+	<section class="componente row">
+		  <h2>Menú principal</h2>
+		<header class="main-head">
+		<nav class="main-menu row">
+			<ul>
+				<li>
+					<a href="#"><i class="ico-menu ico-home"></i>Inicio</a>
+				</li>
+				<li class="hasmenu">
+					<a href="#"><i class="ico-menu ico-home"></i>¿Que es mercado público?<i class="down-ico"></i></a>
+					<ul class="submenu">
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+					</ul>
+				</li>
+				<li class="hasmenu">
+					<a href="#"><i class="ico-menu ico-home"></i>¿Que compra el Estado?</a>
+					<ul class="submenu">
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+					</ul>
+				</li>
+				<li class="hasmenu">
+					<a href="#"><i class="ico-menu ico-home"></i>¿Cómo Ofertar?</a>
+					<ul class="submenu">
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ico-menu ico-home"></i>Tienda</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+	</section>
+
+	 <section class="row componente">
+        <h2>Menú transversal público</h2>
+        <div class="alert alerta-adv">
+		<h3>Importante</h3>    
+		    <p>Este menú tiene la particularidad de que a resoluciones de ancho menor a 640px aparecen los enlaces del menú transversal público dado que bajo esta resolución este elemento desaparece. Deben mostrarse todos los enlaces menos el sitio donde está contenido el menú </p>
+	    </div>
+    </section>
+
+	<section class="componente">
+        <div class="row footer-publico">
+            <div class="col-4 footer-separador down">
+                <img src="img/homer.png" alt="Logotipo de La empresa en cuestión" />
+                <h5>Dirección NombreEmpresa</h5>
+                <span>Ministerio de Hacienda, Gobierno de Chile</span>
+                <span>Monjitas 392, Santiago, Chile.</span>
+                <a href="http://www.chilecompra.cl/index.php?option=com_content&amp;view=article&amp;id=94&amp;Itemid=189&amp;lang=es" target="_blank">Términos y condiciones</a>
+            </div>
+            <div class="col-4 footer-separador down">
+                <h5>Sitios relacionados</h5>
+                    <ul class="list-unstyled">
+                    <li><a href="http://www.chilecompra.cl/" class="enlaces-hide" target="_blank">NombreEmpresa</a></li>
+                        <li><a href="http://www.mercadopublico.cl/" class="enlaces-hide" target="_blank">Mercado Público</a></li>
+                        <li><a href="http://www.chileproveedores.cl/" class="enlaces-hide" target="_blank">ChileProveedores</a></li>
+                        <li><a href="http://www.chilecompra.cl/index.php?option=com_content&amp;view=article&amp;id=185&amp;Itemid=197" class="enlaces-hide" target="_blank">Capacitación</a></li>
+                        <li><a href="http://servicioalusuario.chilecompra.cl/" target="_blank" class="enlaces-hide" >Servicio al usuario</a></li>
+                        <li><a href="http://observatorio.chilecompra.cl/" target="_blank">Observatorio</a></li>
+                        <li><a href="http://www.analiza.cl/" target="_blank">Analiza</a></li>
+                        <li><a href="http://api.mercadopublico.cl/" target="_blank">Api Mercado Público</a></li>
+                        <li><a href="http://datosabiertos.chilecompra.cl/home/" target="_blank">Datos Abiertos</a></li>
+                        <li><a href="http://www.comprassustentables.cl/" target="_blank">Compras Sustentables</a></li>
+                        <li class="trabajo"><a href="http://www.chilecompra.cl/index.php?option=com_phocadownload&amp;view=category&amp;id=41&amp;Itemid=176" target="_blank" >Trabaja con nosotros</a></li>
+                    </ul>    
+            </div>
+            <div class="col-4 footer-separador down last">
+                <h5>Mesa de ayuda</h5>
+                <ul class="list-unstyled utilidades">
+                <li><span class="ico-tel">600 7000 700</span></li>
+                <li><span class="ico-cel">02- 23536310</span></li>
+                </ul>
+                          
+                <h5>Nuestras oficinas</h5>
+                <a href="http://www.google.cl/" target="_blank" title="Localización de nuestras oficinas"><input type="button" class="boton-ubicacion" /></a><br />
+                <h5>Síguenos en</h5>
+                <ul class="list-unstyled utilidades">
+                    <li><a href="https://www.facebook.com/pages/NombreEmpresa/284570349493" target="_blank" title="Sitio de Facebook de Chilecompra"><input type="button" class="boton-facebook" /></a></li>
+                    <li><a href="https://twitter.com/chilecompra" target="_blank" title="Sitio de Twitter de Chilecompra" ><input type="button" class="boton-twitter" /></a></li>
+                    <li><a href="https://cl.linkedin.com/company/chilecompra" target="_blank" title="Sitio de Linkedin de Chilecompra" ><input type="button" class="boton-linkedin" /></a></li>
+                    <li><a href="https://www.youtube.com/user/chilecompratv" target="_blank" title="Sitio de Youtube de Chilecompra" ><input type="button" class="boton-youtube" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	
+</body>
+
+<!-- Mirrored from testingdev/guideline/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jun 2016 16:40:29 GMT -->
+</html>
