@@ -354,6 +354,12 @@ table {
   }
 }
 
+.main-nav-guid ul{
+
+    margin-top: 50px;
+
+}
+
 .last {
   margin-right: 0 !important;
 }
@@ -363,17 +369,22 @@ a:focus, a:active {
 }
 
 .guide-head {
-  background: #333;
-  padding: 20px 10px;
-  width: 100%;
+    background: #000;
+    padding: 20px 10px;
+    width: 100%;
+    font-family: "gobCL";
 }
 
 .componente {
   margin-bottom: 30px;
+  margin-top:30px;
+}
+section{
+      animation: fadeInLoad 1.5s;
 }
 
 .colored-grid [class*="col"] {
-  background: #8AB7DC;
+  background: #8c8c8c;
   margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
@@ -568,6 +579,7 @@ p {
 }
 .menu-transversal ul {
   float: right;
+      margin-right: 50px;
 }
 .menu-transversal ul li {
   float: left;
@@ -889,14 +901,14 @@ p {
   margin-bottom: 10px;
 }
 .table thead {
-  border-right: 1px solid #8AB7DC;
-  border-left: 1px solid #8AB7DC;
-  border-top: 1px solid #8AB7DC;
-  border-bottom: 4px solid #779EC0;
+  border-right: 1px solid #5b5f63;
+  border-left: 1px solid #5b5f63;
+  border-top: 1px solid #5b5f63;
+  border-bottom: 4px solid #959798;
 }
 .table thead tr th {
-  background: #8AB7DC;
-  border-right: 1px solid #779EC0;
+  background: #5b5f63;
+  border-right: 1px solid #8a8f94;
   font-size: 16px;
   font-weight: normal;
   color: #fff;
@@ -907,7 +919,7 @@ p {
   vertical-align: middle;
 }
 .table thead tr th.precio-tb {
-  background: #2D7FC0;
+  background: #5b5f63;
 }
 .table tbody {
   border-right: 1px solid #CCC;
@@ -1000,7 +1012,7 @@ p {
   text-align: left;
   display: none;
   padding: 10px;
-  background: #8AB7DC;
+  background: #5b5f63;
   color: #fff;
   font-weight: regular;
   font-size: 14px;
@@ -1041,10 +1053,10 @@ p {
   overflow-y: scroll;
 }
 .info-desplegable.open h4 {
-  background: url(../img/menos-icon.png) no-repeat center right #0667B4;
+  background: url(../img/menos-icon.png) no-repeat center right #505254;
 }
 .info-desplegable h4 {
-  background: url(../img/mas-icon.png) no-repeat center right #8AB7DC;
+  background: url(../img/mas-icon.png) no-repeat center right #505254c9;
   margin: 0;
   padding: 10px;
   color: #fff;
@@ -1065,11 +1077,11 @@ p {
 }
 
 .info-bloq {
-  border: 1px solid #0667B4;
+  border: 1px solid #505254;
   margin-bottom: 20px;
 }
 .info-bloq .info-bloq-head {
-  background: #0667B4;
+  background: #505254;
 }
 .info-bloq h3 {
   padding: 20px 20px;
@@ -1088,7 +1100,7 @@ p {
 }
 
 .resp-tabs-list {
-  border-bottom: 3px solid #0667B4;
+  border-bottom: 3px solid #505254;
 }
 .resp-tabs-list li {
   cursor: pointer;
@@ -1100,7 +1112,7 @@ p {
   background: #e3e3e3;
 }
 .resp-tabs-list .active {
-  background: #0667B4;
+  background: #505254;
   color: #fff;
 }
 
@@ -1254,12 +1266,12 @@ h2.resp-accordion:first-child {
 
   h2.resp-accordion {
     display: block;
-    background: url(../img/mas-icon.png) no-repeat right center #8AB7DC;
+    background: url(../img/mas-icon.png) no-repeat right center #505254a6;
     color: #fff;
     font-size: 18px;
   }
   h2.resp-accordion.active {
-    background: url(../img/menos-icon.png) no-repeat right center #0667B4;
+    background: url(../img/menos-icon.png) no-repeat right center #505254;
     color: #fff;
   }
 
@@ -1966,8 +1978,9 @@ h2.resp-accordion:first-child {
   line-height: 120%;
 }
 .alert.alerta-adv {
-  background: url(../img/adv.png) no-repeat left top #FFF7E5;
+      background: url(../img/adv.png) no-repeat 0px 10px #FFF7E5;
   border: 1px solid #f1c40f;
+  margin-top:20px;
 }
 .alert.alerta-exito {
   background: url(../img/exito.png) no-repeat left top #EDFAF7;
@@ -2683,3 +2696,16 @@ a{
                                               #9fd8ef 51%,
                                               #2ab0ed 100%);
 }
+
+    @keyframes fadeInLoad {
+        from {
+            opacity:0;
+              filter: blur(5px) grayscale(1);
+        }
+        to {
+            opacity:1;
+        }
+    }
+
+
+      
